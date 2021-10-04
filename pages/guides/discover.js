@@ -23,7 +23,6 @@ export default function Discover({ guides }) {
   console.log(guides);
   return (
     <div>
-    <Navbar />
       <h1>{guides[0].fields.guideTitle}</h1>
       <ReactMarkdown>{guides[0].fields.guideSection}</ReactMarkdown>
 
@@ -70,7 +69,6 @@ export default function Discover({ guides }) {
         width='915'
         height='514'
       />
-      <Footer />
     </div>
   );
 }
