@@ -1,6 +1,8 @@
 import { createClient } from 'contentful';
 import ReactMarkdown from 'react-markdown';
 import Image from 'next/image';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 export async function getStaticProps() {
   const client = createClient({
@@ -21,6 +23,7 @@ export default function Discover({ guides }) {
   console.log(guides);
   return (
     <div>
+    <Navbar />
       <h1>{guides[0].fields.guideTitle}</h1>
       <ReactMarkdown>{guides[0].fields.guideSection}</ReactMarkdown>
 
@@ -67,6 +70,7 @@ export default function Discover({ guides }) {
         width='915'
         height='514'
       />
+      <Footer />
     </div>
   );
 }
