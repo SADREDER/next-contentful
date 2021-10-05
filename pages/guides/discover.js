@@ -38,6 +38,28 @@ export default function Discover({ guides }) {
       />
 
       <p>
+        아래는 Cloudinary에서 이미지만 가져와 next/image 컴포넌트를 사용하여
+        표시한 이미지이다.
+      </p>
+      <Image
+        src='https://res.cloudinary.com/dfya1nsbj/image/upload/v1632899865/webOS_TV_6.0_Home_rzgbqn.png'
+        alt='system UI from Cloudinary'
+        width='915'
+        height='514'
+      />
+
+      <p>
+        아래는 사이트 public 폴더에 이미지를 저장하고, next/image 컴포넌트를 사용하여
+        표시한 이미지이다.
+      </p>
+      <Image
+        src='/../public/webOS_TV_6.0_Home.png'
+        alt='system UI from public folder'
+        width='915'
+        height='514'
+      />
+
+      <p>
         아래는 Cloudinary에서 이미지만 가져와 next/image 컴포넌트 사용 없이
         표시한 이미지이다.
       </p>
@@ -54,17 +76,6 @@ export default function Discover({ guides }) {
       </p>
       <img
         src='https://res.cloudinary.com/dfya1nsbj/image/upload/q_auto:good/v1632899865/webOS_TV_6.0_Home_rzgbqn.png'
-        alt='system UI from Cloudinary'
-        width='915'
-        height='514'
-      />
-      
-      <p>
-        아래는 Cloudinary에서 이미지만 가져와 next/image 컴포넌트를 사용하여
-        표시한 이미지이다.
-      </p>
-      <Image
-        src='https://res.cloudinary.com/dfya1nsbj/image/upload/v1632899865/webOS_TV_6.0_Home_rzgbqn.png'
         alt='system UI from Cloudinary'
         width='915'
         height='514'
