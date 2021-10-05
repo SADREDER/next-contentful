@@ -53,7 +53,7 @@ export default function Discover({ guides }) {
         표시한 이미지이다.
       </p>
       <Image
-        src='/../public/webOS_TV_6.0_Home.png'
+        src='/webOS_TV_6.0_Home.png'
         alt='system UI from public folder'
         width='915'
         height='514'
